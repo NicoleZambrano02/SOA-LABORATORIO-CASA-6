@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="producto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="codigo" />
+                <xs:element ref="nombre" />
+                <xs:element ref="descripcion" />
+                <xs:element ref="cantidad" />
+                <xs:element ref="proveedor" />
+                <xs:element ref="tipo" />
+                <xs:element ref="tipo2" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="color" type="xs:string"/>
+    <xs:element name="peso" type="xs:string"/>
+    <xs:element name="fecha_ingreso" type="xs:string"/>
+    
+    <xs:element name="codigo" type="xs:string"/>
+    <xs:element name="nombre" type="xs:string"/>
+    
+    <xs:element name="descripcion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="color"/>
+                <xs:element ref="peso"/>
+                <xs:element ref="fecha_ingreso"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="cantidad" type="xs:integer"/>
+    <xs:element name="proveedor" type="xs:string"/>
+    <xs:element name="tipo" type="xs:string"/>
+    <xs:element name="tipo2" type="xs:string"/>
+    
+
+</xs:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<producto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="tareaDesafioXSD.xsd">
+    <codigo>12345</codigo>
+    <nombre>DETERGENTE-FAB</nombre>
+    <descripcion>
+        <color>AZUL</color>
+        <peso>14gramos</peso>
+        <fecha_ingreso>2018-11-16</fecha_ingreso>
+    </descripcion>
+    <cantidad>33</cantidad>
+    <proveedor>VERMONTIA</proveedor>
+    <tipo>LIM</tipo>
+    <tipo2>dLp</tipo2>
+</producto>
